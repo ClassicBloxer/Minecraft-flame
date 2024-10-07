@@ -63,7 +63,7 @@
             <div class="bottom"></div>
         </div>
     </div>
-    <audio id="audio" src="https://cdn.videy.co/EIIvqObB1.mp4" type="audio/mp4"></audio>
+    <audio id="audio" src="https://cdn.videy.co/7QEpcAJK1.mp4" type="audio/mp4" autoplay loop></audio>
     <script>
         const scene = document.getElementById('scene');
         const audio = document.getElementById('audio');
@@ -84,15 +84,9 @@
             } else if (clickCount === 2) {
                 clearTimeout(clickTimer);
                 scene.classList.toggle('zoomed');
-                if (audio.paused) {
-                    audio.play();
-                } else {
-                    audio.pause();
-                }
                 clickCount = 0;
             }
         });
     </script>
 </body>
 </html>
-  
